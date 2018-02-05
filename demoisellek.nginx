@@ -1,6 +1,6 @@
 server {
     listen 80;
     location / {
-        proxy_pass http://0.0.0.0:4000;
+        proxy_pass http://0.0.0.0:4017;
     }
 }
