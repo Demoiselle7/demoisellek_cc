@@ -1,6 +1,14 @@
 server {
     listen 80;
+    server_name demoisellek7.cc;
     location / {
-        proxy_pass http://0.0.0.0:4017;
+        # 代理地址
+        proxy_pass http://0.0.0.0:4000/;
+        proxy_read_timeout 300;
+        proxy_connect_timeout 300;
+        proxy_redirect     off;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+        proxy_set_header   Host              $http_host;
+        proxy_set_header   X-Real-IP         $remote_addr;
     }
 }
