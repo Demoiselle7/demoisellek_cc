@@ -7,8 +7,10 @@ const { log } = require('./utils')
 const { secretKey } = require('./config')
 
 // 引入路由文件
-// const todo = require('./routes/todo')
+const resume = require('./routes/resume')
 const index = require('./routes/index')
+const note = require('./routes/note')
+const demo = require('./routes/demo')
 
 // 先初始化一个 express 实例
 const app = express()
@@ -38,7 +40,9 @@ app.use('/static', express.static(asset))
 // 比如 foo 里有一个 app.get('/foo', () => {})
 // 那么 foo.get('/bar') 匹配的路由就是 /foo/bar
 app.use('/', index)
-// app.use('/todo', todo)
+app.use('/resume', resume)
+app.use('/note',note)
+app.use('/demo',demo)
 
 // 把逻辑放在单独的函数中, 这样可以方便地调用
 // 指定了默认的 host 和 port, 因为用的是默认参数, 当然可以在调用的时候传其他的值

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>resume</title>
+        <link rel="stylesheet" href="../static/css/resume.css" media="screen" title="no title">
+    </head>
+    <body>
+        <nav>
+            <div class="nav_left">
+                <img id="nav_logo" src="../static/img/nav_logo.png">
+            </div>
+            <div class="nav_right">
+                <a href="/note">NOTE</a>
+                <span class="line">|</span>
+                <a href="#">RESUME</a>
+                <span class="line">|</span>
+                <a href="/demo">DEMO</a>
+                <span class="line">|</span>
+                <a href="/">HOME</a>
+                <span class="line">|</span>
+           </div>
+        </nav>
+        <section id="show_section">
+            <div class="show_section_left">
+                <h1>Demoisellek</h1>
+                <h2>this is the south</h2>
+                <button type="button" name="button">Click here</button>
+            </div>
+            <div class="show_section_right">
+                <img src="../static/img/the_south.jpg" alt="" />
+            </div>
+        </section>
+        <footer>
+            <p>
+                this is the end
+            </p>
+        </footer>
+    <!-- 临时 -->
+    <script>
+        const e = function(selector) {
+            return document.querySelector(selector)
+        }
+
+        const addNav = function() {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                e('nav').style.position = 'fixed'
+                e('nav').style.top = '0'
+                e('nav').style.backgroundColor = '#FFF'
+                e('nav').style.zIndex = '900'
+
+            }else {
+                e('nav').style.position = 'relative'
+                // e('nav').style.background = 'linear-gradient(to left bottom, hsl(154, 100%, 85%) 0%,hsl(43, 100%, 85%) 100%)'
+            }
+        }
+
+
+        window.onscroll = function() {
+            addNav()
+        }
+    </script>
+    </body>
+</html>

@@ -17,6 +17,17 @@ index.get('/', (request, response) => {
     response.render('index/index.html')
 })
 
+index.get('/resume', (request, response) => {
+
+    response.render('resume/index.html')
+
+})
+
+index.get('/note', (request, response) => {
+
+    response.render('note/index.html')
+
+})
 // index.get('/login', (request, response) => {
 //     response.render('index/login.html')
 // })

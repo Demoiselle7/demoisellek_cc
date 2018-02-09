@@ -6,60 +6,37 @@
         <link rel="stylesheet" href="../static/css/index.css" media="screen" title="no title">
     </head>
     <body>
-        <nav>
-            <div class="nav_left">
-                <img id="nav_logo" src="../static/img/nav_logo.png">
+        <div class="main">
+        <a href="/note" class="index_container note">
+            <div class="index_pic">
+                <!-- <img src="../static/img/note.png" alt="" /> -->
             </div>
-            <div class="nav_right">
-                <a href="#">NOTE</a>
-                <span class="line">|</span>
-                <a href="#">RESUME</a>
-                <span class="line">|</span>
-                <a href="#">DEMO</a>
-                <span class="line">|</span>
-                <a href="#">HOME</a>
-                <span class="line">|</span>
-           </div>
-        </nav>
-        <section id="show_section">
-            <div class="show_section_left">
-                <h1>Demoisellek</h1>
-                <h2>this is the south</h2>
-                <button type="button" name="button">Click here</button>
+            <div class="index_info">
+                <p>NOTE</p>
+                <p>笔记</p>
             </div>
-            <div class="show_section_right">
-                <img src="../static/img/the_south.jpg" alt="" />
-                <!-- <img src="../static/img/click_before.jpg" alt="" /> -->
+        </a>
+
+        <a href="/resume"class="index_container resume">
+            <div class="index_pic">
+                <!-- <img src="../static/img/south.png" alt="" /> -->
             </div>
-        </section>
-        <footer>
-            <p>
-                this is the end
-            </p>
-        </footer>
-    <!-- 临时 -->
-    <script>
-        const e = function(selector) {
-            return document.querySelector(selector)
-        }
+            <div class="index_info">
+                <p>RESUME</p>
+                <p>简历</p>
+            </div>
+        </a>
 
-        const addNav = function() {
-            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-                e('nav').style.position = 'fixed'
-                e('nav').style.top = '0'
-                e('nav').style.backgroundColor = '#FFF'
-                e('nav').style.zIndex = '900'
+        <a href="/demo" class="index_container demo">
+            <div class="index_pic">
+                <!-- <img src="../static/img/demo.png" alt="" /> -->
+            </div>
+            <div class="index_info">
+                <p>DEMO</p>
+                <p>作品</p>
+            </div>
+        </a>
+    </div>
 
-            }else {
-                e('nav').style.position = 'relative'
-                // e('nav').style.background = 'linear-gradient(to left bottom, hsl(154, 100%, 85%) 0%,hsl(43, 100%, 85%) 100%)'
-            }
-        }
-
-
-        window.onscroll = function() {
-            addNav()
-        }
-    </script>
     </body>
 </html>
