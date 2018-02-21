@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Music Player</title>
+
+        <link rel="stylesheet" href="../../static/css/demo/music.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav_left">
+                <img id="nav_logo" src="../static/img/nav_logo.png">
+            </div>
+            <div class="nav_right">
+                <a href="#">NOTE</a>
+                <span class="line">|</span>
+                <a href="/resume">RESUME</a>
+                <span class="line">|</span>
+                <a href="/demo">DEMO</a>
+                <span class="line">|</span>
+                <a href="/">HOME</a>
+                <span class="line">|</span>
+           </div>
+        </nav>
+         <main id="id-main">
+                <audio id="id-audio-player">
+                    <source src="../../static/src/mr.chu.mp3">
+                </audio> -
+
+         <section class="main-page">
+                <section class="left-aside">
+                    <img id="id-arm" src="../../static/img/music_player/arm.png" alt="">
+                    <div class="music-cd">
+                        <span class="cd-outside midXY">
+                            <span id="id-rotate-cd" class="cd midXY bag">
+                                <span class="bag midXY" id="id-cd-cover">
+                                </span>
+                            </span>
+                        </span>
+
+                </section>
+                <section class="right-aside">
+                    <div class="play-list">
+                        播放列表
+                    </div>
+                    <div id="id-music-play-list" data-cur=0>
+                        <div class="music-info-title">
+                            <span class="music-name">歌曲</span>
+                            <span class="music-duration">时长</span>
+                            <span class="music-singer">歌手</span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <section id="id-music-control">
+                <img id="id-img-pre" src="../../static/img/music_player/pre.png" alt="pre">
+                <img id="id-img-play" src="../../static/img/music_player/play.png" alt="play">
+                <img id="id-img-next" src="../../static/img/music_player/next.png" alt="next">
+            </section>
+            <section id="id-music-vol-order">
+                <img id="id-music-order" data-order=0 src="../../static/img/music_player/loop.png" alt="">
+                <img src="../../static/img/music_player/vol.png" alt="">
+                <span class="music-vol vetical"></span>
+                <span class="music-vol vetical" id="id-music-vol"></span>
+                <span class="vetical point" id="id-music-vol-point">
+                    <span></span>
+                </span>
+            </section>
+            <section id="id-music-progress">
+                <section id="id-current-time">
+                    00:00
+                </section>
+                <section id="id-duration">
+                    00:00
+                </section>
+                <section id="id-progress">
+                    <span class="music-progress vetical" id="id-full-progress"></span>
+                    <span class="music-progress vetical" id="id-current-progress"></span>
+                    <span class="vetical point" id="id-music-progress-point">
+                        <span>
+                        </span>
+                    </span>
+                </section>
+            </section>
+        </footer>
+        <script src="../static/js/nav.js"></script>
+        <script src="../../static/js/music_player/data.js"></script>
+        <script src="../../static/js/music_player/toolbox.js"></script>
+        <script src="../../static/js/music_player/player.js"></script>
+    </body>
+</html>

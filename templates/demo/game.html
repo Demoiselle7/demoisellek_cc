@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Get the carrot</title>
+        <link rel="stylesheet" href="../static/css/demo/game.css" media="screen" title="no title">
+        <script src='../static/js/game/guagame/utils.js'></script>
+        <script src='../static/js/game/guagame/gua_game.js'></script>
+        <script src='../static/js/game/guagame/gua_scene.js'></script>
+        <script src='../static/js/game/guagame/gua_image.js'></script>
+        <script src='../static/js/game/guagame/gua_particle_system.js'></script>
+
+        <!-- 场景文件 -->
+        <script src='../static/js/game/scene/main/player.js'></script>
+        <script src='../static/js/game/scene/main/bullet.js'></script>
+        <script src='../static/js/game/scene/main/cloud.js'></script>
+        <script src='../static/js/game/scene/main/enemy.js'></script>
+        <script src='../static/js/game/scene/main/enemy_bullet.js'></script>
+        <script src='../static/js/game/scene/main/scene.js'></script>
+        <!-- 结束和标题场景 -->
+        <script src='../static/js/game/scene/end/scene_end.js'></script>
+        <script src='../static/js/game/scene/title/scene_title.js'></script>
+        <!-- 关卡数据 -->
+        <script src='../static/js/game/config.js'></script>
+        <script src='../static/js/game/utils.js'></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav_left">
+                <img id="nav_logo" src="../static/img/nav_logo.png">
+            </div>
+            <div class="nav_right">
+                <a href="/note">NOTE</a>
+                <span class="line">|</span>
+                <a href="/resume">RESUME</a>
+                <span class="line">|</span>
+                <a href="/demo">DEMO</a>
+                <span class="line">|</span>
+                <a href="/">HOME</a>
+                <span class="line">|</span>
+           </div>
+        </nav>
+        <section id="show_section">
+            <div class="show_section_left">
+                <canvas id="id-canvas" width="750" height="400"></canvas>
+
+            </div>
+            <div class="show_section_right">
+                <div class="game_intro">
+                    游戏介绍
+                    <br>
+                    按 "b" 开始游戏
+                    <br>
+                    按 "wasd" 移动兔子
+                    <br>
+                    按 "j" 发射胡萝卜
+                    <br>
+                    按 "r" 重新开始游戏
+                </div>
+                <div class="game_design">
+                    本游戏的框架采用原生Js编写,应用了面向对象的思想,封装了不同的游戏场景,有碰撞检测,模拟粒子爆炸的效果.
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                this is the end
+            </p>
+        </footer>
+        <script src="../static/js/nav.js"></script>
+        <script src=../static/js/game/main.js></script>
+    </body>
+</html>

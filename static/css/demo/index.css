@@ -1,0 +1,68 @@
+/*导航栏*/
+body {
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+    height: 100%;
+    background: url('../img/background.png') repeat-y;
+}
+
+nav {
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: white;
+    flex: 1;
+}
+
+nav a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFF;
+    font-weight:bold;
+}
+
+nav .line {
+    margin: 1em;
+    color: #424242;
+}
+
+nav #nav_logo {
+    height: 60px;
+    transform: translateX(50px);
+}
+
+/*第一块展示区*/
+#show_section {
+    width: 100%;
+    margin-top: 3%;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+#show_section a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+#show_section a img{
+    height: 100px;
+}
+
+/*第二块展示区*/
+footer {
+    margin-top: 3%;
+    width: 100%;
+    flex: 1;
+
+}
