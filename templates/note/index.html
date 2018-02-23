@@ -26,6 +26,36 @@
                 <h1>Demoisellek</h1>
                 <h2>this is the south</h2>
                 <!-- 准备搬论坛的程序过来 -->
+                <a href="/note/new">新增 note</a>
+                <main>
+                    <div id="content">
+                        <div class="panel">
+                            <div class="header">
+                                <a href="/note" class="note-tab current-tab">
+                                    全部
+                                </a>
+                                <a href="/note?board_id=js">
+                                        js
+                                </a>
+                            </div>
+                            <div class="inner post">
+                                <div class="note_list">
+                                    {% for t in notes %}
+                                    <div class="cell">
+                                        <div class="note_title_wrapper">
+                                            <img src="" alt="用户头像" class="avatar">
+                                            <a class="note_title" href="/note/detail/{{ t.id }}">
+                                                {{ t.title }}
+                                            </a>
+                                            <span>{{ t.views }}</span>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
                 <button type="button" name="button">Click here</button>
             </div>
             <div class="show_section_right">
@@ -37,6 +67,15 @@
                 this is the end
             </p>
         </footer>
+
+
+    <script>
+        (function () {
+            var editor = new Editor();
+            editor.render($('.editor')[0]);
+        })();
+    </script>
+    <script src="../static/js/seven.js"></script>
     <script src="../static/js/nav.js"></script>
     </body>
 </html>

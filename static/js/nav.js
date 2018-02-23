@@ -1,6 +1,6 @@
-const e = function(selector) {
-    return document.querySelector(selector)
-}
+// const e = function(selector) {
+//     return document.querySelector(selector)
+// }
 
 const addNav = function() {
     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>todo spa</title>
+        <link rel="stylesheet" href="../../static/css/demo/todo.css">
+    </head>
+    <body>
+        <div class="">
+            <button class="gua-tab" data-page=todo-new>显示创建 todo 界面</button>
+            <button class="gua-tab" data-page=todo-list>显示 todo list 界面</button>
+        </div>
+        <div class="gua-page todo-new">
+            <input id=id-input-task type="text" value="">
+            <button id=id-button-add type="button">创建 todo</button>
+        </div>
+        <div class="gua-page todo-list"></div>
+        <!-- 还应该有 todo-edit  todo-detail 两个界面 -->
+        <script src="../static/js/seven.js"></script>
+        <script src=../../static/js/todo/todoApi.js></script>
+        <script src=../../static/js/todo/pageTodoList.js></script>
+        <script src=../../static/js/todo/todoApp.js></script>
+    </body>
+</html>
