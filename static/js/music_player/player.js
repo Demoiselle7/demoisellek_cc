@@ -277,7 +277,6 @@ var insertMusic = function(music, i) {
 
 // 更新当前音乐
 var updateMusic = function(music) {
-    log('muuuuuuusic',music)
 	var player = e('#id-audio-player')
 	var baseAD = '../../static/src/'
 	player.src = baseAD + music.music
